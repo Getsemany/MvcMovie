@@ -9,29 +9,81 @@ using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
 {
-    public class HomeController : Controller
+    [Route("[controller]/[action]")]
+public class HomeController : Controller
+{
+    [Route("~/")]
+    [Route("/Home")]
+    [Route("~/Home/Index")]
+    public IActionResult Index()
     {
-        private readonly ILogger<HomeController> _logger;
+        return ControllerContext.MyDisplayRouteInfo();
+    }
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+    public IActionResult About()
+    {
+        return ControllerContext.MyDisplayRouteInfo();
+    }
+}
+}
+public class MyDemo2Controller : Controller
+{
+    [Route("/articles/{page}")]
+    public IActionResult ListArticles(int page)
+    {
+        return ControllerContext.MyDisplayRouteInfo(page);
+    }
+}
+[Route("api/[controller]")]
+[ApiController]
+public class Test2Controller : ControllerBase
+{
+    [HttpGet]   // GET /api/test2
+    public IActionResult ListProducts()
+    {
+        return ControllerContext.MyDisplayRouteInfo();
+    }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+    [HttpGet("{id}")]   // GET /api/test2/xyz
+    public IActionResult GetProduct(string id)
+    {
+       return ControllerContext.MyDisplayRouteInfo(id);
+    }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+    [HttpGet("int/{id:int}")] // GET /api/test2/int/3
+    public IActionResult GetIntProduct(int id)
+    {
+        return ControllerContext.MyDisplayRouteInfo(id);
+    }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+    [HttpGet("int2/{id}")]  // GET /api/test2/int2/3
+    public IActionResult GetInt2Product(int id)
+    {
+        return ControllerContext.MyDisplayRouteInfo(id);
+    }
+}
+[ApiController]
+public class Products2ApiController : ControllerBase
+{
+    [HttpGet("/products2/{id}", Name = "Products_List")]
+    public IActionResult GetProduct(int id)
+    {
+        return ControllerContext.MyDisplayRouteInfo(id);
+    }
+}
+[ApiController]
+[Route("products")]
+public class ProductsApiController : ControllerBase
+{
+    [HttpGet]
+    public IActionResult ListProducts()
+    {
+        return ControllerContext.MyDisplayRouteInfo();
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetProduct(int id)
+    {
+        return ControllerContext.MyDisplayRouteInfo(id);
     }
 }

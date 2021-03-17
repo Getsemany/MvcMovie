@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvcMovie\\MvcMovie.csproj": {}
+    "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvCMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvcMovie\\MvcMovie.csproj": {
+    "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvCMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvCMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvCMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\getsy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvcMovie\\obj\\",
+        "outputPath": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvCMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\getsy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,6 +71,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.0-*, )"
+            },
+            "Rick.Docs.Samples.RouteInfo": {
+              "target": "Package",
+              "version": "[1.0.0.4, )"
             }
           },
           "imports": [

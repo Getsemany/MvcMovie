@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XRY0/MLdxLBKwiNNanTMwcTsOYDSQrrTyy2IMLi8FER8j3m/5FSAvmB9HMIp+He40r0fLo0hw1n3Imw0UfMIzw==",
+  "dgSpecHash": "ZlL8D3Dzn67J0vuW87F4B+AnZewWIi7+kMRcWlQWKabI0iLi5T+6Y2l/slEwnUFXsvjGSkP9qhRE53i9ENGlug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvcMovie\\MvcMovie.csproj",
+  "projectFilePath": "C:\\Users\\getsy\\Desktop\\Programacion web2\\MvCMovie\\MvcMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\getsy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\getsy\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
@@ -68,6 +68,7 @@
     "C:\\Users\\getsy\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\getsy\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\getsy\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\getsy\\.nuget\\packages\\rick.docs.samples.routeinfo\\1.0.0.4\\rick.docs.samples.routeinfo.1.0.0.4.nupkg.sha512",
     "C:\\Users\\getsy\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\getsy\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\getsy\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
